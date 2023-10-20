@@ -23,14 +23,16 @@
     background: #7193b8;
 }
 
+body {
+    font-family: 'Bitter', serif;
+}
+
 header {
-    display: grid;
+    display: flex;
     height: 1000px;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     align-items: center;
-    justify-items: center;
     justify-content: center;
-    background-color: #ECF2FF;
+    background: radial-gradient(circle, rgba(170,175,185,1) 0%, rgba(172,172,176,1) 100%);
     overflow-x: hidden;
     padding: 40px;
 }
@@ -44,26 +46,22 @@ header {
 }
 
 .heading-text {
-    color: black;
+    color: white;
     padding: 12px;
     max-width: 600px;
-    margin-right: 24px;
-    text-align: start;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 40px;
+    gap: 32px;
 }
 
 .heading-text h1, .heading-text h2 {
-    font-family: 'Arsenal', cursive;
-    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c, 7px 16px 8px rgba(0,0,0,0.3);
     animation: appear 3s ease-out forwards;
     opacity: 0;
 }
 
 .heading-text p {
-    font-family: 'Shanti', sans-serif;
     line-height: 1.2rem;
     animation: move 1.5s ease-in forwards 1.5s;
     opacity: 0;
@@ -71,23 +69,25 @@ header {
 }
 
 .heading-text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 300;
 }
 
 .heading-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 
 .logos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     grid-auto-rows: minmax(150px, auto);
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .logos img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     transform: translateY(-1000%) rotate(0deg) scale(1);
 }
 
@@ -103,64 +103,197 @@ header {
     animation: logo-anim 2s ease-out 4s forwards, logo-anim2 6s ease-out 11.4s infinite;
 }
 
-main {
-    background-color: #F5F5F5;
-    box-shadow: 0px 10px 20px 10px gray;
+#bio {
+    height: 85vh;
+    background: #10151f;
+    padding: 64px;
+}
+
+.bio-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+}
+
+.bio-container img {
+    height: 70%;
+    min-width: 320px;
+}
+
+.bio-text {
+    padding: 24px;
+    width: 650px;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.skills {
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    border-radius: 12px;
+    padding: 4px 16px;
+    font-size: 0.9rem;
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.js {
+    background: rgb(133, 133, 7);
+}
+
+.css {
+    background: rgb(4, 100, 156);
+}
+
+.html {
+    background: rgb(146, 67, 2);
+}
+
+.react {
+    background: rgb(0, 93, 129);
+}
+
+#learning {
+    height: 70vh;
+    background: radial-gradient(circle, rgba(92,143,245,1) 0%, rgba(60,117,172,1) 100%);
+    padding: 48px;
+}
+
+.learning-container {
+    bordser: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.learning-container h2 {
+    color: white;
+    borsder: 1px solid white;
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+.learning-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learning-container img {
+    width: 50%;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-text {
+    color: rgb(236, 234, 234);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    height: 450px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    gap: 32px;
+}
+
+#projects {
+    background: radial-gradient(circle, rgb(105, 107, 114) 0%, rgb(79, 82, 88) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 40px;
-    font-family: 'Shanti', sans-serif;
-}
-
-main h2 {
-    font-size: 3rem;
-}
-
-.projects {
-    display: grid;
-    width: 80%;
     padding: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-auto-rows: minmax(400px, auto);
+    height: auto;
+    color: rgb(231, 231, 231);
+}
+
+#projects h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 60px;
     gap: 100px;
-    justify-items: center;
     justify-content: center;
 }
 
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .project {
-    border: 1px solid black;
-    border-radius: 10px;
-    max-height: 400px;
-    width: 60%;
-    max-width: 400px;
+    width: 100%;
+    height: 450px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 4px;
-    transition: transform 0.4s ease-in, box-shadow 0.4s ease-in-out;
-    line-height: 1rem;
+    gap: 40px;
     word-wrap: break-word;
+    background: rgb(39, 43, 56);
+    overflow: hidden;
 }
 
 .project img {
-    width: 100%;
-    height: 70%;
-    object-fit:cover;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    margin-bottom: 8px;
-    border-bottom: 1px solid black;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
 }
 
-.project p:nth-child(2) {
-    font-size: 1.3rem;
+.project:hover img {
+    transform: scale(1.05);
 }
 
-.project p:nth-child(3) {
-    align-self: start;
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    height: 320px;
     padding: 8px;
+    gap: 24px;
+}
+
+.project-info h3 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.project-info p {
+    line-height: 1.6rem;
+}
+
+.project-info a {
+    color: white;
+}
+
+.project-info a:hover {
+    color: peru;
 }
 
 footer {
@@ -173,7 +306,6 @@ footer {
     align-items: center;
     gap: 30px;
     font-size: 2rem;
-    font-family: 'Arsenal', cursive;
 }
 
 footer p:nth-child(1) {
@@ -210,15 +342,9 @@ footer p:nth-child(2) {
     color: rgb(0, 110, 255);
 }
 
-.project:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 8px 2px rgb(80, 146, 86)
-}
-
 .linktext {
     font-size: 0;
 }
-
 
 @keyframes appear {
     to {
