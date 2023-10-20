@@ -10,17 +10,17 @@
 
 ::-webkit-scrollbar-track {
     background: black;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: inset 0 0 4px 2px gray;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #9AC5F4;
-    border-radius: 10px;
+    background: white;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #7193b8;
+    background: rgb(207, 204, 204);
 }
 
 body {
@@ -35,14 +35,6 @@ header {
     background: radial-gradient(circle, rgba(170,175,185,1) 0%, rgba(172,172,176,1) 100%);
     overflow-x: hidden;
     padding: 40px;
-}
-
-.incroyable {
-    max-width: 600px;
-    height: 50%;
-    box-shadow: 0px 0px 20px 4px black;
-    opacity: 0;
-    animation: appear 1s ease-out 2s forwards;
 }
 
 .heading-text {
@@ -74,7 +66,7 @@ header {
 }
 
 .heading-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 300;
 }
 
@@ -118,8 +110,10 @@ header {
 }
 
 .bio-container img {
-    height: 70%;
+    height: 80%;
     min-width: 320px;
+    object-fit: cover;
+    align-self: flex-start;
 }
 
 .bio-text {
@@ -175,7 +169,6 @@ header {
 }
 
 .learning-container {
-    bordser: 1px solid red;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -184,7 +177,6 @@ header {
 
 .learning-container h2 {
     color: white;
-    borsder: 1px solid white;
     display: flex;
     justify-content: center;
     font-size: 2.3rem;
@@ -265,10 +257,6 @@ header {
     transition: transform 0.5s ease-in-out;
 }
 
-.project:hover img {
-    transform: scale(1.05);
-}
-
 .project-info {
     display: flex;
     flex-direction: column;
@@ -292,58 +280,59 @@ header {
     color: white;
 }
 
+.project-info i {
+    font-size: 1.6rem;
+}
+
 .project-info a:hover {
-    color: peru;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 28px ;
-    box-shadow: 0px 0px 8px 2px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    font-size: 2rem;
-}
-
-footer p:nth-child(1) {
-    font-size: 2.3rem;
-}
-
-footer p:nth-child(2) {
-    margin-top: 50px;
-}
-
-.icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: minmax(100px, auto);
-    width: 60%;
-    justify-items: center;
+    color: rgb(189, 187, 187);
 }
 
 .icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
-    height: 60%;
+    height: fit-content;
+    width: 55px;
+    padding: 8px 4px;
+    border-radius: 12px;
+    text-decoration: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s all ease-in;
 }
 
-.icon:nth-child(1):hover {
-    color: gray;
+.linkedin {
+    top: 35vh;
+    left: 8px;
 }
 
-.icon:nth-child(2):hover {
+.github {
+    top: 44vh;
+    left: 8px;
+}
+
+.twitter {
+    top: 53vh;
+    left: 8px;
+}
+
+.linkedin:hover {
+    color: rgb(0, 132, 255);
+}
+
+.github:hover {
     color: purple;
 }
 
-.icon:nth-child(3):hover {
-    color: rgb(0, 110, 255);
+.twitter:hover {
+    color: black;
 }
 
 .linktext {
     font-size: 0;
+    display: none;
 }
 
 @keyframes appear {
