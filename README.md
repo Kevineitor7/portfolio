@@ -1,2 +1,2 @@
 # portfolio
-portfolio project for the Odin Project
+Kevin Campa Web Dev portfolio
