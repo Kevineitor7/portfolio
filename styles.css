@@ -302,6 +302,11 @@ header {
     left: 8px;
 }
 
+.whatsapp {
+    top: 62vh;
+    left: 8px;
+}
+
 .linkedin:hover {
     color: rgb(0, 132, 255);
 }
@@ -312,6 +317,10 @@ header {
 
 .twitter:hover {
     color: black;
+}
+
+.whatsapp:hover {
+    color: rgb(124, 238, 49);
 }
 
 .linktext {
