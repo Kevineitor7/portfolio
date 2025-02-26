@@ -27,7 +27,7 @@ header {
     height: 1000px;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, rgb(152, 157, 167) 0%, rgb(159, 159, 163)100%);
+    background: radial-gradient(circle, #32576b 0%, #0A3981 100%);
     overflow-x: hidden;
     padding: 40px;
 }
@@ -68,7 +68,7 @@ header {
 
 #bio {
     height: 100vh;
-    background: #202220;
+    background: radial-gradient(circle, rgb(231, 231, 231) 0%, rgb(172, 195, 204) 100%); 
     padding: 64px;
 }
 
@@ -82,13 +82,13 @@ header {
 .bio-text {
     padding: 24px;
     width: 650px;
-    line-height: 2.2rem;
+    line-height: 2rem;
     display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
-    font-size: 1.1rem;
-    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    color: black;
 }
 
 .skills {
@@ -124,7 +124,7 @@ header {
     bottom: 112px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     transition: 500ms all ease-in-out;
     opacity: 0;
 }
@@ -134,9 +134,10 @@ header {
 }
 
 #learning {
-    height: auto;
-    background: radial-gradient(circle, rgba(92,143,245,1) 0%, rgba(60,117,172,1) 100%);
+    height: 100%;
+    background: radial-gradient(circle, rgb(231, 231, 231) 0%, rgb(152, 172, 180) 100%); 
     padding: 48px;
+    color: black;
 }
 
 .learning-container {
@@ -149,17 +150,16 @@ header {
 }
 
 .learning-container h2 {
-    color: white;
     display: flex;
     justify-content: center;
     font-size: 2.2rem;
     font-weight: normal;
-    margin: 40px 0 60px;
+    margin: 40px 0 80px;
 }
 
 .learning-body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -171,16 +171,15 @@ header {
 }
 
 .learning-text {
-    color: rgb(236, 234, 234);
-    line-height: 1.5rem;
-    font-size: 1rem;
-    height: 450px;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    height: 420px;
     width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 12px;
-    gap: 32px;
+    gap: 20px;
 }
 
 .learning-text a {
@@ -189,7 +188,7 @@ header {
 }
 
 #projects {
-    background: radial-gradient(circle, rgb(105, 107, 114) 0%, rgb(79, 82, 88) 100%);
+    background: radial-gradient(circle, rgba(28,3,215,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,10 +225,10 @@ header {
     align-items: center;
     gap: 40px;
     word-wrap: break-word;
-    background: rgb(226, 226, 226);
+    background: #F5EFFF;
     overflow: hidden;
     color: black;
-    box-shadow: 8px 12px 10px 0px rgb(71, 71, 71);
+    box-shadow: 4px 6px 16px 0px #2b37a3;
 }
 
 .project img {
